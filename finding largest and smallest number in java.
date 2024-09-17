@@ -1,0 +1,23 @@
+public class arry{
+public static void main(String[] args) {
+    int aarry[] = {2 , 3 , 4 , -9 , 6};
+    int smallest = Integer.MAX_VALUE;
+    int largest = Integer.MIN_VALUE;
+    int smallestindex = -1;
+     int largestindex = -1;
+    for (int i = 0; i < aarry.length; i++) {
+       if (smallest>aarry[i]) {
+           smallest= aarry[i];
+           smallestindex = i;
+       }
+       if (largest<aarry[i]) {
+           largest=aarry[i];
+           largestindex = i ;
+       }
+       }
+       System.out.println("largest value:" + largest);
+      System.out.println( " smallest value :" + smallest);
+      System.out.println("index of largest value : " + largestindex);
+      System.out.println("index of smallest value : " + smallestindex);
+}
+}
